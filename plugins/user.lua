@@ -25,4 +25,16 @@ return {
       },
     },
   },
+  {
+    "mbbill/undotree",
+    cmd = "UndotreeToggle",
+    init = function() vim.g.undotree_WindowLayout = 2 end,
+    keys = {
+      {
+        "<leader>uU",
+        "<cmd>UndotreeToggle<cr>",
+        desc = "Toggle the undo tree",
+      },
+    },
+  },
 }

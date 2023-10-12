@@ -4,9 +4,26 @@ return {
     -- set to true or false etc.
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    spell = true, -- sets vim.opt.spell
+    wrap = true, -- sets vim.opt.wrap
+    tabstop = 2, -- sets vim.opt.tabstop
+    shiftwidth = 2, -- sets vim.opt.shiftwidth
+    softtabstop = 2, -- sets vim.opt.softtabstop
+    expandtab = true, -- sets vim.opt.expandtab
+    smartindent = true, -- sets vim.opt.smartindent
+    autoindent = true, -- sets vim.opt.autoindent
+    swapfile = false, -- sets vim.opt.swapfile
+    backup = false, -- sets vim.opt.backup
+    undofile = true, -- sets vim.opt.undofile
+    undodir = vim.fn.stdpath "cache" .. "/undo", -- sets vim.opt.undodir
+    incsearch = true, -- sets vim.opt.incsearch
+    ignorecase = true, -- sets vim.opt.ignorecase
+    smartcase = true, -- sets vim.opt.smartcase
+    termguicolors = true, -- sets vim.opt.termguicolors
+    scrolloff = 8, -- sets vim.opt.scrolloff
+    signcolumn = "yes:1", -- sets vim.opt.signcolumn
+    updatetime = 50, -- sets vim.opt.updatetime
+    colorcolumn = "80", -- sets vim.opt.colorcolumn
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
